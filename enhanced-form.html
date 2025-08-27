@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata for clarity & SEO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Enhanced HTML5 page demonstrating lists, tables, media, and advanced form features with built-in validation."
+    />
+    <title>Enhanced HTML5 Content & Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>Enhanced HTML5 Content & Mastering Forms</h1>
+      <p>
+        This page demonstrates lists, tables, media, and accessible HTML5 forms
+        with validation.
+      </p>
+    </header>
+
+    <main>
+      <!-- Lists Section -->
+      <section aria-labelledby="lists-heading">
+        <h2 id="lists-heading">Using Lists Effectively</h2>
+        <article>
+          <h3>Top Web Development Skills</h3>
+          <ul>
+            <li>Semantic HTML5</li>
+            <li>Accessibility (a11y)</li>
+            <li>CSS & Responsive Design</li>
+            <li>JavaScript & Frameworks</li>
+          </ul>
+
+          <h3>Steps to Build a Web Page</h3>
+          <ol>
+            <li>Plan the structure and content</li>
+            <li>Write semantic HTML</li>
+            <li>Enhance with CSS for styling</li>
+            <li>Add interactivity with JavaScript</li>
+          </ol>
+        </article>
+      </section>
+
+      <!-- Tables Section -->
+      <section aria-labelledby="tables-heading">
+        <h2 id="tables-heading">Using Tables for Structured Data</h2>
+        <table border="1">
+          <caption>
+            Popular Web Browsers Market Share (Example)
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Browser</th>
+              <th scope="col">Market Share (%)</th>
+              <th scope="col">Available on</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Google Chrome</td>
+              <td>64%</td>
+              <td>Windows, macOS, Linux, Mobile</td>
+            </tr>
+            <tr>
+              <td>Safari</td>
+              <td>19%</td>
+              <td>macOS, iOS</td>
+            </tr>
+            <tr>
+              <td>Firefox</td>
+              <td>4%</td>
+              <td>Windows, macOS, Linux</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Media Section -->
+      <section aria-labelledby="media-heading">
+        <h2 id="media-heading">Embedding Media</h2>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&auto=format&fit=crop&q=80"
+            alt="People collaborating on a web development project"
+            width="400"
+          />
+          <figcaption>
+            Figure 1: Real example image of teamwork in web development
+          </figcaption>
+        </figure>
+
+        <figure>
+          <figcaption>Sample Audio Clip:</figcaption>
+          <audio controls>
+            <source
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </figure>
+
+        <figure>
+          <figcaption>Sample Video Clip:</figcaption>
+          <video controls width="400">
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </figure>
+      </section>
+
+      <!-- Form Section -->
+      <section aria-labelledby="form-heading">
+        <h2 id="form-heading">HTML5 Form with Validation</h2>
+        <form action="#" method="post" autocomplete="on">
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="John Doe"
+              required
+              minlength="3"
+            /><br /><br />
+
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+              required
+            /><br /><br />
+
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="6"
+              pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{6,}$"
+              placeholder="At least 6 characters, incl. uppercase, lowercase, and number"
+            /><br /><br />
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required /><br /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferences</legend>
+
+            <label for="country">Select Country:</label>
+            <select id="country" name="country" required>
+              <option value="">--Select--</option>
+              <option value="nigeria">Nigeria</option>
+              <option value="usa">United States</option>
+              <option value="uk">United Kingdom</option></select
+            ><br /><br />
+
+            <p>Preferred Contact Method:</p>
+            <input
+              type="radio"
+              id="contact-email"
+              name="contact"
+              value="email"
+              required
+            />
+            <label for="contact-email">Email</label>
+
+            <input
+              type="radio"
+              id="contact-phone"
+              name="contact"
+              value="phone"
+            />
+            <label for="contact-phone">Phone</label><br /><br />
+
+            <label for="newsletter">Subscribe to Newsletter:</label>
+            <input
+              type="checkbox"
+              id="newsletter"
+              name="newsletter"
+              checked
+            /><br /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Other Details</legend>
+
+            <label for="website">Personal Website:</label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              placeholder="https://example.com"
+            /><br /><br />
+
+            <label for="age">Age:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              max="100"
+              required
+            /><br /><br />
+
+            <label for="comments">Additional Comments:</label><br />
+            <textarea
+              id="comments"
+              name="comments"
+              rows="4"
+              cols="40"
+              placeholder="Your message here..."
+            ></textarea
+            ><br /><br />
+          </fieldset>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 HTML5 Learning Project. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
